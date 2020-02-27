@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" href="images/boek_icoon.jpg">
+</head>
+<body>
+<header>
+    <div class="image">
+        <img src="images/Boek.jpg" alt="Boek">
+    </div>
+    <nav class="navigatie">
+        <ul>
+            <li class="index">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="nieuw_boek">
+                <a href="nieuw_boek.html">Nieuw Boek</a>
+            </li>
+            <li class="boekenlijst">
+                <a href="boekenlijst.html">Boekenlijst</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="groot_scherm_afbeelding">
+        <img src="images/Groot_boek.jpg" alt="Boek">
+    </div>
+    <div class="dropdown">
+        <button class="menu">Menu</button>
+        <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="nieuw_boek.html">Nieuw Boek</a>
+            <a href="boekenlijst.html">Boekenlijst</a>
+        </div>
+    </div>
+</header>
+<main class="nieuw_boek">
+    <form action="form-mail">
+        <div>
+            <label for="titel">Titel *</label>
+            <br>
+            <input type="text" id="titel" name="titel" placeholder="titel" required=""/>
+        </div>
+        <br>
+        <div>
+            <label for="auteur">Auteur *</label>
+            <br>
+            <input type="text" id="auteur" name="auteur" placeholder="auteur" required=""/>
+        </div>
+        <br>
+        <div>
+            <label for="paginas">Pagina's *</label>
+            <br>
+            <input type="number" id="paginas" name="paginas" placeholder="123" required=""/>
+        </div>
+        <br>
+        <div>
+            <label for="prijs">Prijs *</label>
+            <br>
+            <input type="number" id="prijs" name="prijs" placeholder="123" required=""/>
+        </div>
+        <br>
+        <div class="verstuurknop">
+            <button>
+                Verstuur
+            </button>
+        </div>
+        <div class="tekst-nieuw-boek">
+            <p>* Vereist</p>
+        </div>
+    </form>
+</main>
+</body>
+</html>
